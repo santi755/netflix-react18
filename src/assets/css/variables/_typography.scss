@@ -1,0 +1,31 @@
+// TODO: Structure this in them own files
+
+// Font Family
+$font-family-base: "Montserrat", sans-serif;
+$font-family-code: "Courier New", monospace; // Cambia a la fuente de código que prefieras
+
+// Font Size
+$font-size-base: 16px; // Puedes ajustar según tus preferencias
+
+// Line Height
+$line-height-base: 1.5; // Puedes ajustar según tus preferencias
+
+// Letter Spacing
+$letter-spacing-base: 0.5px; // Puedes ajustar según tus preferencias
+
+// Link Styles
+$link-color: $primary; // Puedes utilizar el color principal o ajustar según tus preferencias
+$link-decoration: none; // Puedes ajustar según tus preferencias
+
+// Hover Link Styles
+$link-hover-color: darken(
+  $link-color,
+  10%
+); // Puedes ajustar según tus preferencias
+$link-hover-decoration: underline; // Puedes ajustar según tus preferencias
+
+@mixin hover {
+  &:hover {
+    @content; // Aquí permitimos que el contenido sea insertado en el bloque hover
+  }
+}
